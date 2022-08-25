@@ -13,9 +13,10 @@ namespace UI.Forms
 {
     public partial class AnaSayfa : Form
     {
-        public AnaSayfa()
+        public AnaSayfa(string data="")
         {
             InitializeComponent();
+            lblHold2.Text = data;
         }
 
         private void btnAnaSayfaGirisEkraninaDon_Click(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace UI.Forms
 
         private void btnAnaSayfaOgunTakip_Click(object sender, EventArgs e)
         {
-            Ogun ogun = new Ogun();
+            Ogun ogun = new Ogun(lblHold2.Text);
             this.Hide();
             ogun.Show();
         }
@@ -56,6 +57,11 @@ namespace UI.Forms
             Raporlar raporlar = new Raporlar();
             this.Hide();
             raporlar.Show();
+        }
+
+        private void AnaSayfa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
