@@ -1,0 +1,14 @@
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\HammbuuFittDal.dll.config
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\HammbuuFittDal.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\HammbuuFittDal.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\EntityFramework.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\HammbuuFittData.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\HammbuuFittData.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\EntityFramework.xml
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\obj\Debug\HammbuuFittDal.csproj.AssemblyReference.cache
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\obj\Debug\HammbuuFittDal.csproj.CoreCompileInputs.cache
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\obj\Debug\HammbuuFittDal.csproj.CopyComplete
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\obj\Debug\HammbuuFittDal.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittDal\obj\Debug\HammbuuFittDal.pdb

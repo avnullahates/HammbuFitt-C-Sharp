@@ -1,0 +1,6 @@
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\bin\Debug\HammbuuFittData.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\bin\Debug\HammbuuFittData.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\obj\Debug\HammbuuFittData.csproj.AssemblyReference.cache
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\obj\Debug\HammbuuFittData.csproj.CoreCompileInputs.cache
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\obj\Debug\HammbuuFittData.dll
+C:\Users\pana_\Desktop\HammbuFitt-master\HammbuuFittData\obj\Debug\HammbuuFittData.pdb
