@@ -16,10 +16,13 @@ namespace UI.Forms
     public partial class Ogun : Form
     {
         Context db;
+        
+       
         public Ogun(string datas)
         {
             InitializeComponent();
             lblHold1.Text = datas;
+
         }
 
         private void Ogun_FormClosed(object sender, FormClosedEventArgs e)
@@ -27,14 +30,78 @@ namespace UI.Forms
             Application.Exit();
         }
 
-        private void btnOgunGeriDon_Click(object sender, EventArgs e)
+        private void btnMealBackToMain_Click(object sender, EventArgs e)
         {
             AnaSayfa anaSayfa = new AnaSayfa();
             this.Hide();
             anaSayfa.Show();
         }
 
-        private void btnOgunEkle_Click(object sender, EventArgs e)
+        private void Ogun_Load(object sender, EventArgs e)
+        {
+            FillCategory();
+            cmbMealFoodSelect.Enabled = false;
+            cmbMealSelect.Enabled = false;
+
+        }
+        private void FillCategory(int SelectedCategory = -1)
+        {
+            db = new Context();
+            List<Category> kategoriler = db.Kategoriler.ToList();
+            cmbMealCategorySelect.DataSource = kategoriler;
+            cmbMealCategorySelect.DisplayMember = "CategoryName";
+            cmbMealCategorySelect.ValueMember = "CategoryID";
+            cmbMealCategorySelect.SelectedValue = SelectedCategory;
+        }
+
+        private void cmbMealCategorySelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cmbMealCategorySelect.Items.Count; i++)
+            {
+                if (cmbMealCategorySelect.SelectedIndex == i)
+                    FoodFill(i + 1);
+            }
+            if (cmbMealCategorySelect.SelectedIndex > -1)
+                cmbMealFoodSelect.Enabled = true;
+        }
+        public void FoodFill(int x)
+        {
+            List<Food> foods = db.Yemekler.Where(w => w.CategoryID == x).ToList();
+            cmbMealFoodSelect.DataSource = foods;
+            cmbMealFoodSelect.DisplayMember = "FoodName";
+            cmbMealFoodSelect.ValueMember = "FoodID";
+            cmbMealFoodSelect.SelectedValue = -1;
+        }
+
+        private void cmbMealFoodSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbMealCategorySelect.Enabled == true && cmbMealFoodSelect.Enabled == true)
+            {
+                cmbMealSelect.Enabled = true;
+            }
+        }
+
+        private void btnDailyMealInfo_Click(object sender, EventArgs e)
+        {
+            DateTime end = DateTime.Now;
+            DateTime start = DateTime.Now.Date;
+ 
+            var ogunler = db.ÖğünYemekleri.Include("MealsFood").Include("FoodsMeal").Where(x => x.MealsFood.AddedDate >= start &&x.MealsFood.AddedDate <= end).ToList();
+            foreach (var item in ogunler)
+            {
+                dgvMealDaily.Rows.Add(item.MealsFood.MealTime, item.FoodsMeal.FoodName, item.FoodsMeal.Calories);
+            }
+        }
+
+        private void btnDailyCalories_Click(object sender, EventArgs e)
+        {
+            DateTime end = DateTime.Now;
+            DateTime start = DateTime.Now.Date;
+            double result = db.ÖğünYemekleri.Where(x => x.MealsFood.AddedDate >= start && x.MealsFood.AddedDate <= end).Sum(x=>x.FoodsMeal.Calories);
+            MessageBox.Show(result.ToString());
+        }
+
+        private void btnAddMeal_Click(object sender, EventArgs e)
         {
             if (cmbMealCategorySelect.SelectedIndex < 0 || cmbMealFoodSelect.SelectedIndex < 0 || cmbMealSelect.SelectedIndex < 0)
             {
@@ -79,66 +146,6 @@ namespace UI.Forms
                 lstShowMeal.Items.Add(lvi);
                 //temiizle
             }
-        }
-
-        private void Ogun_Load(object sender, EventArgs e)
-        {
-            FillCategory();
-            cmbMealFoodSelect.Enabled = false;
-            cmbMealSelect.Enabled = false;
-        }
-        private void FillCategory(int SelectedCategory = -1)
-        {
-            db = new Context();
-            List<Category> kategoriler = db.Kategoriler.ToList();
-            cmbMealCategorySelect.DataSource = kategoriler;
-            cmbMealCategorySelect.DisplayMember = "CategoryName";
-            cmbMealCategorySelect.ValueMember = "CategoryID";
-            cmbMealCategorySelect.SelectedValue = SelectedCategory;
-        }
-
-        private void cmbMealCategorySelect_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < cmbMealCategorySelect.Items.Count; i++)
-            {
-                if (cmbMealCategorySelect.SelectedIndex == i)
-                    FoodFill(i + 1);
-            }
-            if (cmbMealCategorySelect.SelectedIndex > -1)
-                cmbMealFoodSelect.Enabled = true;
-        }
-        public void FoodFill(int x)
-        {
-            List<Food> foods = db.Yemekler.Where(w => w.CategoryID == x).ToList();
-            cmbMealFoodSelect.DataSource = foods;
-            cmbMealFoodSelect.DisplayMember = "FoodName";
-            cmbMealFoodSelect.ValueMember = "FoodID";
-            cmbMealFoodSelect.SelectedValue = -1;
-        }
-
-        private void cmbMealFoodSelect_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbMealCategorySelect.Enabled == true && cmbMealFoodSelect.Enabled == true)
-            {
-                cmbMealSelect.Enabled = true;
-            }
-        }
-
-        private void btnGunlukOgunlerBilgisi_Click(object sender, EventArgs e)
-        {
-            //int userID = db.Kullacınılar.Where(x => x.UserName == lblHold1.Text).FirstOrDefault().UserID;
-
-            DateTime end = DateTime.Now;
-            DateTime start = DateTime.Now.Date;
-
-           var result= db.ÖğünKullanıcıları.Where(x => x.MealsUser.AddedDate >= start && x.MealsUser.AddedDate <= end).Select(x=>new 
-           { 
-               x.UsersMeal.FirstName,
-               x.MealsUser.MealTime
-           }).ToList();
-            dgvMealDaily.DataSource = result;
-
-
         }
     }
 }
