@@ -1,28 +1,28 @@
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\UI.exe.config
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\UI.exe
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\UI.pdb
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\EntityFramework.dll
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.dll
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\HammbuuFittData.dll
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.pdb
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.dll.config
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\HammbuuFittData.pdb
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\EntityFramework.xml
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.csproj.AssemblyReference.cache
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.AnaSayfa.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.DiyetOnerisi.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Giriş.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.KayitOl.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.Ogun.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.Raporlar.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.UygulamaTanitim.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Forms.YemekVeKalori.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.Properties.Resources.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.SifremiUnuttum.resources
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.csproj.GenerateResource.cache
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.csproj.CopyComplete
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.exe
-C:\Users\pana_\Desktop\HammbuFitt-master\UI\obj\Debug\UI.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\UI.exe.config
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\UI.exe
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\UI.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\EntityFramework.dll
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.dll
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\HammbuuFittData.dll
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\HammbuuFittDal.dll.config
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\HammbuuFittData.pdb
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\EntityFramework.xml
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.AnaSayfa.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.DiyetOnerisi.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Giriş.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.KayitOl.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.Ogun.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.Raporlar.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.UygulamaTanitim.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Forms.YemekVeKalori.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.SifremiUnuttum.resources
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.exe
+C:\Users\pana_\Desktop\HammbuFitt-master (1)\HammbuFitt-master\UI\obj\Debug\UI.pdb
