@@ -12,7 +12,7 @@ namespace HammbuuFittDal
     {
         public Context()
         {
-            Database.Connection.ConnectionString = @"Server=LAPTOP-FA6RBVRG; Database=HammbuFittDB; uid=sa; pwd=1234;";
+            Database.Connection.ConnectionString = @"Server=DESKTOP-5AELP68; Database=HammbuFittDB; uid=sa; pwd=123;";
         }
 
         public DbSet<Category> Kategoriler { get; set; }
