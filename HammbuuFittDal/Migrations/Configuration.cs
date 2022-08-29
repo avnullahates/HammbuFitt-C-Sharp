@@ -20,6 +20,88 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
+            User newUser1 = new User()
+            {
+                FirstName = "Admin",
+                LastName = "Admin",
+                Age = 27,
+                Gender = true,
+                BasalMetabolismRate = 1000,
+                BodyMassIndex = 15,
+                MailAddress = "admin@admin.com",
+                UserName = "admin",
+                Password = "admin",
+                IsActive = true,
+                IsSportsman = true,
+            };
+
+            User newUser2 = new User()
+            {
+                FirstName = "Muhammed",
+                LastName = "KOÇ",
+                Age = 27,
+                Gender = true,
+                BasalMetabolismRate = 3000,
+                BodyMassIndex = 23,
+                MailAddress = "Mami_koc@gmail.com",
+                UserName = "Mami17",
+                Password = "Mami_17",
+                IsActive = true,
+                IsSportsman = true,
+            };
+
+            User newUser3 = new User()
+            {
+                FirstName = "Avnullah Mansur",
+                LastName = "ATEŞ",
+                Age = 27,
+                Gender = true,
+                BasalMetabolismRate = 1500,
+                BodyMassIndex = 23,
+                MailAddress = "Avnullah_ates@gmail.com",
+                UserName = "Ates34",
+                Password = "Ates@34",
+                IsActive = true,
+                IsSportsman = false,
+            };
+
+            User newUser4 = new User()
+            {
+                FirstName = "Burak",
+                LastName = "ALPASLAN",
+                Age = 32,
+                Gender = true,
+                BasalMetabolismRate = 1600,
+                BodyMassIndex = 25,
+                MailAddress = "Burak_alpaslan@gmail.com",
+                UserName = "Burak34",
+                Password = "Burak_34",
+                IsActive = true,
+                IsSportsman = false,
+            };
+            User newUser5 = new User()
+            {
+                FirstName = "Hüseyin",
+                LastName = "KILIÇ",
+                Age = 26,
+                Gender = true,
+                BasalMetabolismRate = 1800,
+                BodyMassIndex = 20,
+                MailAddress = "Hüso_klc@gmail.com",
+                UserName = "Klc34",
+                Password = "Klc@34",
+                IsActive = true,
+                IsSportsman = false,
+            };
+
+            context.Users.Add(newUser1);
+            context.Users.Add(newUser2);
+            context.Users.Add(newUser3);
+            context.Users.Add(newUser4);
+            context.Users.Add(newUser5);
+
+
+
             Category newCategory1 = new Category() { CategoryName = "Fırın Ürünleri", IsActive = true };
             Category newCategory2 = new Category() { CategoryName = "Et ve Tavuk Ürünleri", IsActive = true };
             Category newCategory3 = new Category() { CategoryName = "İçecekler", IsActive = true };
@@ -302,100 +384,6 @@
             context.Foods.Add(newFood118);
             context.Foods.Add(newFood119);
             context.Foods.Add(newFood120);
-
-
-            User newUser1 = new User()
-            {
-                FirstName = "Admin",
-                LastName = "Admin",
-                Age = 27,
-                Gender = true,
-                BasalMetabolismRate = 1000,
-                BodyMassIndex = 15,
-                MailAddress = "admin@admin.com",
-                UserName = "admin",
-                Password = "admin",
-                IsActive=true,
-                IsSportsman = true,
-            };
-
-            User newUser2 = new User()
-            {
-                FirstName = "Muhammed",
-                LastName = "KOÇ",
-                Age = 27,
-                Gender = true,
-                BasalMetabolismRate = 3000,
-                BodyMassIndex = 23,
-                MailAddress = "Mami_koc@gmail.com",
-                UserName = "Mami17",
-                Password = "Mami_17",
-                IsActive = true,
-                IsSportsman = true,
-            };
-
-            User newUser3 = new User()
-            {
-                FirstName = "Avnullah Mansur",
-                LastName = "ATEŞ",
-                Age = 27,
-                Gender = true,
-                BasalMetabolismRate = 1500,
-                BodyMassIndex = 23,
-                MailAddress = "Avnullah_ates@gmail.com",
-                UserName = "Ates34",
-                Password = "Ates@34",
-                IsActive = true,
-                IsSportsman = false,
-            };
-
-            User newUser4 = new User()
-            {
-                FirstName = "Burak",
-                LastName = "ALPASLAN",
-                Age = 32,
-                Gender = true,
-                BasalMetabolismRate = 1600,
-                BodyMassIndex = 25,
-                MailAddress = "Burak_alpaslan@gmail.com",
-                UserName = "Burak34",
-                Password = "Burak_34",
-                IsActive = true,
-                IsSportsman = false,
-            };
-            User newUser5 = new User()
-            {
-                FirstName = "Hüseyin",
-                LastName = "KILIÇ",
-                Age = 26,
-                Gender = true,
-                BasalMetabolismRate = 1800,
-                BodyMassIndex = 20,
-                MailAddress = "Hüso_klc@gmail.com",
-                UserName = "Klc34",
-                Password = "Klc@34",
-                IsActive = true,
-                IsSportsman = false,
-            };
-
-            context.Users.Add(newUser1);
-            context.Users.Add(newUser2);
-            context.Users.Add(newUser3);
-            context.Users.Add(newUser4);
-            context.Users.Add(newUser5);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             context.SaveChanges();
         }

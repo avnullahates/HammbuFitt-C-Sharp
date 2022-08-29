@@ -12,7 +12,7 @@ namespace HammbuuFittDal
     {
         public Context()
         {
-            Database.Connection.ConnectionString = @"Server=LAPTOP-FA6RBVRG; Database=HammbuFittDB; uid=sa; pwd=1234;";
+            Database.Connection.ConnectionString = @"Server=tcp:hammbu.database.windows.net,1433;Initial Catalog=HammbuFittDB;Persist Security Info=False;User ID=admin123;Password=HammbuFitt23;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         }
 
         public DbSet<Category> Categories { get; set; }
